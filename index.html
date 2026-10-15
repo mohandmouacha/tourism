@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morocco Horizon Tours | Guided Sahara Tours & Authentic Moroccan Experiences</title>
+  <meta name="description" content="Discover Morocco with Morocco Horizon Tours. Luxury Sahara desert excursions, imperial cities, Atlas mountains, and authentic custom cultural travel experiences.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts (Outfit & Playfair Display for Elegance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <a href="tel:+212600000000"><i class="fa-solid fa-phone"></i> +212 600-000000</a>
+        <a href="https://wa.me/212600000000" target="_blank"><i class="fa-brands fa-whatsapp"></i> Live Chat 24/7</a>
+        <a href="mailto:contact@moroccotours.com"><i class="fa-solid fa-envelope"></i> contact@moroccotours.com</a>
+      </div>
+      <div class="top-socials">
+        <!-- Placeholder social handles clearly marked for client editing -->
+        <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://tripadvisor.com/yourhandle" target="_blank" aria-label="TripAdvisor"><i class="fa-solid fa-plane"></i></a>
+        <a href="https://tiktok.com/@yourhandle" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="brand-logo">
+        <i class="fa-solid fa-compass brand-icon"></i>
+        <div class="brand-text">
+          <span class="brand-name">MOROCCO HORIZON</span>
+          <span class="brand-sub">TOURS & EXPERIENCES</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#tours" class="nav-link" data-i18n="nav_tours">Tour Packages</a>
+        <a href="#offers" class="nav-link" data-i18n="nav_experiences">Experiences</a>
+        <a href="#stays" class="nav-link" data-i18n="nav_stays">Stays & Riads</a>
+        <a href="#why-us" class="nav-link" data-i18n="nav_about">Why Us</a>
+        <a href="#reviews" class="nav-link" data-i18n="nav_reviews">Reviews</a>
+        <a href="#contact" class="nav-link nav-btn-cta" data-i18n="nav_contact">Book Now</a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Theme Switcher (Light / Dark) -->
+        <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Multi-Language Switcher -->
+        <div class="language-dropdown">
+          <button class="lang-btn" id="lang-btn">
+            <i class="fa-solid fa-globe"></i>
+            <span id="current-lang">EN</span>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <ul class="lang-menu" id="lang-menu">
+            <li data-lang="en" class="active">English (EN)</li>
+            <li data-lang="ar">العربية (AR)</li>
+            <li data-lang="fr">Français (FR)</li>
+            <li data-lang="es">Español (ES)</li>
+            <li data-lang="zh">简体中文 (ZH)</li>
+            <li data-lang="de">Deutsch (DE)</li>
+          </ul>
+        </div>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-media-wrapper">
+      <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1920&q=80" alt="Morocco Sahara Desert Sunset" class="hero-bg-img">
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge animate-fade-down" data-i18n="hero_badge">✨ Unforgettable Moroccan Adventures</div>
+      <h1 class="hero-title animate-fade-up" data-i18n="hero_title">Discover the Magic of Morocco</h1>
+      <p class="hero-subtitle animate-fade-up" data-i18n="hero_subtitle">
+        Immerse yourself in golden Saharan dunes, mystical imperial medinas, breathtaking Atlas peaks, and vibrant cultural traditions.
+      </p>
+
+      <div class="hero-actions animate-fade-up">
+        <a href="#tours" class="btn btn-primary" data-i18n="hero_btn_explore">
+          <i class="fa-solid fa-compass"></i> Explore Packages
+        </a>
+        <button class="btn btn-secondary video-play-btn" id="open-hero-video">
+          <i class="fa-solid fa-circle-play"></i> <span data-i18n="hero_btn_video">Watch Experience</span>
+        </button>
+      </div>
+
+      <!-- Quick Trust Stats -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">12+</span>
+          <span class="stat-label" data-i18n="stats_years">Years of Excellence</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">15,000+</span>
+          <span class="stat-label" data-i18n="stats_travelers">Happy Travelers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4.9 ★</span>
+          <span class="stat-label" data-i18n="stats_rating">5-Star Reviews</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label" data-i18n="stats_tours">Custom Itineraries</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Tour Packages Section -->
+  <section id="tours" class="section-padding tours-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> OUR BESTSELLERS</span>
+        <h2 class="section-title" data-i18n="tours_title">Featured Tour Packages</h2>
+        <p class="section-subtitle" data-i18n="tours_subtitle">
+          Handcrafted journeys designed to deliver authentic, luxury, and immersive experiences across Morocco.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="tour-filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All Packages</button>
+        <button class="filter-btn" data-filter="desert" data-i18n="filter_desert">Sahara Desert</button>
+        <button class="filter-btn" data-filter="imperial" data-i18n="filter_imperial">Imperial Cities</button>
+        <button class="filter-btn" data-filter="atlas" data-i18n="filter_atlas">Atlas & Coast</button>
+        <button class="filter-btn" data-filter="cultural" data-i18n="filter_cultural">Cultural Experiences</button>
+      </div>
+
+      <!-- Tour Cards Grid -->
+      <div class="tours-grid" id="tours-grid">
+
+        <!-- Tour 1 -->
+        <div class="tour-card" data-category="desert">
+          <div class="tour-badge">Popular</div>
+          <div class="tour-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Sahara Dunes Excursion" class="tour-img">
+            <span class="tour-duration"><i class="fa-regular fa-clock"></i> 3 <span data-i18n="tour_days">Days</span></span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-rating"><i class="fa-solid fa-star"></i> 4.9 (240 reviews)</div>
+            <h3 class="tour-title" data-i18n="tour1_title">Sahara Golden Dunes Expedition</h3>
+            <p class="tour-desc" data-i18n="tour1_desc">
+              Journey from Marrakech across the High Atlas to Merzouga desert. Enjoy camel trekking, luxury desert camp stargazing, and Berber music.
+            </p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-label">From</span>
+                <span class="price-amount">$320 <small>/ person</small></span>
+              </div>
+              <div class="tour-buttons">
+                <button class="btn-sm btn-outline open-tour-modal" data-tour="tour1" data-i18n="tour_details">View Details</button>
+                <a href="#contact" class="btn-sm btn-primary quick-book-btn" data-tour-name="Sahara Golden Dunes Expedition" data-i18n="tour_book_now">Quick Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 2 -->
+        <div class="tour-card" data-category="imperial">
+          <div class="tour-badge">Best Heritage</div>
+          <div class="tour-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=800&q=80" alt="Imperial Cities Fes Medina" class="tour-img">
+            <span class="tour-duration"><i class="fa-regular fa-clock"></i> 7 <span data-i18n="tour_days">Days</span></span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-rating"><i class="fa-solid fa-star"></i> 5.0 (180 reviews)</div>
+            <h3 class="tour-title" data-i18n="tour2_title">Imperial Cities & Medinas Grand Tour</h3>
+            <p class="tour-desc" data-i18n="tour2_desc">
+              Explore the ancient heritage of Rabat, Meknes, Fes, and Marrakech. Discover palatial riads, artisan souks, and UNESCO world sites.
+            </p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-label">From</span>
+                <span class="price-amount">$750 <small>/ person</small></span>
+              </div>
+              <div class="tour-buttons">
+                <button class="btn-sm btn-outline open-tour-modal" data-tour="tour2" data-i18n="tour_details">View Details</button>
+                <a href="#contact" class="btn-sm btn-primary quick-book-btn" data-tour-name="Imperial Cities & Medinas Grand Tour" data-i18n="tour_book_now">Quick Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 3 -->
+        <div class="tour-card" data-category="cultural">
+          <div class="tour-badge">Instagram Fav</div>
+          <div class="tour-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1558642084-fd07fae5282e?auto=format&fit=crop&w=800&q=80" alt="Chefchaouen Blue Streets" class="tour-img">
+            <span class="tour-duration"><i class="fa-regular fa-clock"></i> 4 <span data-i18n="tour_days">Days</span></span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-rating"><i class="fa-solid fa-star"></i> 4.9 (195 reviews)</div>
+            <h3 class="tour-title" data-i18n="tour3_title">Chefchaouen & North Pearl Discovery</h3>
+            <p class="tour-desc" data-i18n="tour3_desc">
+              Wander the fairy-tale blue streets of Chefchaouen, visit Tangier where the ocean meets sea, and explore ancient Volubilis ruins.
+            </p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-label">From</span>
+                <span class="price-amount">$450 <small>/ person</small></span>
+              </div>
+              <div class="tour-buttons">
+                <button class="btn-sm btn-outline open-tour-modal" data-tour="tour3" data-i18n="tour_details">View Details</button>
+                <a href="#contact" class="btn-sm btn-primary quick-book-btn" data-tour-name="Chefchaouen & North Pearl Discovery" data-i18n="tour_book_now">Quick Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 4 -->
+        <div class="tour-card" data-category="atlas">
+          <div class="tour-badge">Adventure</div>
+          <div class="tour-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=800&q=80" alt="Atlas Mountains Village Trek" class="tour-img">
+            <span class="tour-duration"><i class="fa-regular fa-clock"></i> 2 <span data-i18n="tour_days">Days</span></span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-rating"><i class="fa-solid fa-star"></i> 4.8 (110 reviews)</div>
+            <h3 class="tour-title" data-i18n="tour4_title">Atlas Mountains & Berber Village Trek</h3>
+            <p class="tour-desc" data-i18n="tour4_desc">
+              Hike through lush valleys of Mount Toubkal, dine with hospitable local Berber families, and experience pristine mountain vistas.
+            </p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-label">From</span>
+                <span class="price-amount">$190 <small>/ person</small></span>
+              </div>
+              <div class="tour-buttons">
+                <button class="btn-sm btn-outline open-tour-modal" data-tour="tour4" data-i18n="tour_details">View Details</button>
+                <a href="#contact" class="btn-sm btn-primary quick-book-btn" data-tour-name="Atlas Mountains & Berber Village Trek" data-i18n="tour_book_now">Quick Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 5 -->
+        <div class="tour-card" data-category="atlas">
+          <div class="tour-badge">Relaxing</div>
+          <div class="tour-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Essaouira Coast" class="tour-img">
+            <span class="tour-duration"><i class="fa-regular fa-clock"></i> 1 <span data-i18n="tour_days">Day</span></span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-rating"><i class="fa-solid fa-star"></i> 4.9 (85 reviews)</div>
+            <h3 class="tour-title" data-i18n="tour5_title">Essaouira Coastal Breeze & Souks</h3>
+            <p class="tour-desc" data-i18n="tour5_desc">
+              Relax in the serene Atlantic coastal town of Essaouira, famous for fresh seafood, argan oil co-ops, historic ramparts, and surf.
+            </p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-label">From</span>
+                <span class="price-amount">$85 <small>/ person</small></span>
+              </div>
+              <div class="tour-buttons">
+                <button class="btn-sm btn-outline open-tour-modal" data-tour="tour5" data-i18n="tour_details">View Details</button>
+                <a href="#contact" class="btn-sm btn-primary quick-book-btn" data-tour-name="Essaouira Coastal Breeze & Souks" data-i18n="tour_book_now">Quick Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 6 -->
+        <div class="tour-card" data-category="cultural">
+          <div class="tour-badge">Immersive</div>
+          <div class="tour-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80" alt="Moroccan Spices & Gastronomy" class="tour-img">
+            <span class="tour-duration"><i class="fa-regular fa-clock"></i> 1 <span data-i18n="tour_days">Day</span></span>
+          </div>
+          <div class="tour-body">
+            <div class="tour-rating"><i class="fa-solid fa-star"></i> 5.0 (150 reviews)</div>
+            <h3 class="tour-title" data-i18n="tour6_title">Moroccan Culinary & Artisan Immersion</h3>
+            <p class="tour-desc" data-i18n="tour6_desc">
+              Master secret spices with top local chefs in private cooking classes, visit leather tanneries, and create ceramic pottery.
+            </p>
+            <div class="tour-footer">
+              <div class="tour-price">
+                <span class="price-label">From</span>
+                <span class="price-amount">$110 <small>/ person</small></span>
+              </div>
+              <div class="tour-buttons">
+                <button class="btn-sm btn-outline open-tour-modal" data-tour="tour6" data-i18n="tour_details">View Details</button>
+                <a href="#contact" class="btn-sm btn-primary quick-book-btn" data-tour-name="Moroccan Culinary & Artisan Immersion" data-i18n="tour_book_now">Quick Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer Section -->
+  <section id="offers" class="section-padding offers-section bg-alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-concierge-bell"></i> PREMIUM SERVICES</span>
+        <h2 class="section-title" data-i18n="offers_title">What We Offer You</h2>
+        <p class="section-subtitle" data-i18n="offers_subtitle">
+          Comprehensive premium travel services tailored to exceed your expectations every step of the way.
+        </p>
+      </div>
+
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div class="offer-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <h3 class="offer-title" data-i18n="offer1_title">Expert Local Guides</h3>
+          <p class="offer-desc" data-i18n="offer1_desc">Multilingual native guides passionate about sharing authentic stories, rich history, and hidden gems.</p>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-icon"><i class="fa-solid fa-hotel"></i></div>
+          <h3 class="offer-title" data-i18n="offer2_title">Luxury & Authentic Riads</h3>
+          <p class="offer-desc" data-i18n="offer2_desc">Handpicked boutique accommodation ranging from authentic Moroccan Riads to 5-star luxury desert camps.</p>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-icon"><i class="fa-solid fa-route"></i></div>
+          <h3 class="offer-title" data-i18n="offer3_title">Tailor-Made Custom Trips</h3>
+          <p class="offer-desc" data-i18n="offer3_desc">Fully customizable itineraries matching your dates, group size, preferences, and comfort level.</p>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-icon"><i class="fa-solid fa-car"></i></div>
+          <h3 class="offer-title" data-i18n="offer4_title">Private 4x4 & AC Transport</h3>
+          <p class="offer-desc" data-i18n="offer4_desc">Travel in comfort with modern, air-conditioned Mercedes V-class minivans or luxury 4x4 Toyota Land Cruisers.</p>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3 class="offer-title" data-i18n="offer5_title">24/7 Dedicated Support</h3>
+          <p class="offer-desc" data-i18n="offer5_desc">Around-the-clock concierge team available via WhatsApp and phone from arrival to departure.</p>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h3 class="offer-title" data-i18n="offer6_title">Transparent & Best Rates</h3>
+          <p class="offer-desc" data-i18n="offer6_desc">No hidden fees. Premium experience with high value guarantee and flexible cancellation policies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accommodation / Room & Stay Gallery Section -->
+  <section id="stays" class="section-padding stays-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-bed"></i> ACCOMMODATION SHOWCASE</span>
+        <h2 class="section-title" data-i18n="stays_title">Authentic Stays & Room Gallery</h2>
+        <p class="section-subtitle" data-i18n="stays_subtitle">
+          Preview our handpicked luxury desert camps, historic palatial riads, and serene mountain retreats.
+        </p>
+      </div>
+
+      <!-- Stay Filters -->
+      <div class="stay-filters">
+        <button class="stay-filter-btn active" data-stay="all" data-i18n="gallery_all">All Stays</button>
+        <button class="stay-filter-btn" data-stay="camps" data-i18n="gallery_camps">Desert Camps</button>
+        <button class="stay-filter-btn" data-stay="riads" data-i18n="gallery_riads">Palace Riads</button>
+        <button class="stay-filter-btn" data-stay="resorts" data-i18n="gallery_resorts">Mountain Lodges</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item" data-type="camps" data-img="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" data-caption="Merzouga Sahara Luxury Royal Tent">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80" alt="Sahara Luxury Camp Tent">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Desert Camp</span>
+            <h4>Luxury Desert Suite Tent</h4>
+            <p><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-type="riads" data-img="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=80" data-caption="Traditional Marrakech Riad Courtyard & Pool">
+          <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=600&q=80" alt="Marrakech Riad Courtyard">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Riad Palace</span>
+            <h4>Royal Riad Courtyard Suite</h4>
+            <p><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-type="riads" data-img="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" data-caption="Moroccan Authentic Carved Suite Bedroom">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Moroccan Riad Room">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Riad Suite</span>
+            <h4>Fes Medina Historic Suite</h4>
+            <p><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-type="camps" data-img="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80" data-caption="Sahara Desert Stargazing Dining Lounge">
+          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=80" alt="Desert Camp Evening">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Desert Camp</span>
+            <h4>Sahara Stargazing Lounge</h4>
+            <p><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-type="resorts" data-img="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" data-caption="High Atlas Kasbah Mountain Lodge Pool">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Atlas Mountain Kasbah">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Mountain Lodge</span>
+            <h4>Atlas Mountain View Kasbah</h4>
+            <p><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-type="riads" data-img="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80" data-caption="Moroccan Traditional Mosaic Bath & Spa">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=80" alt="Moroccan Spa Suite">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Spa & Wellness</span>
+            <h4>Authentic Hammam Spa Suite</h4>
+            <p><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Enlarge</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Experience Section -->
+  <section class="section-padding video-banner-section">
+    <div class="video-banner-bg"></div>
+    <div class="video-banner-overlay"></div>
+    <div class="container text-center video-banner-content">
+      <button class="video-play-pulse" id="open-banner-video" aria-label="Play Moroccan Journey Video">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <h2 class="banner-title" data-i18n="video_title">Feel the Energy of Morocco</h2>
+      <p class="banner-subtitle" data-i18n="video_subtitle">
+        Take a 2-minute visual journey through golden deserts, blue alleyways, and warm hospitality.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" class="section-padding why-us-section bg-alt">
+    <div class="container">
+      <div class="why-us-wrapper">
+        <div class="why-us-media">
+          <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Morocco Camel Trek" class="why-img main-img">
+          <div class="why-experience-badge">
+            <span class="exp-num">100%</span>
+            <span class="exp-text">Authentic Local Touch</span>
+          </div>
+        </div>
+
+        <div class="why-us-info">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> OUR COMMITMENT</span>
+          <h2 class="section-title" data-i18n="why_title">Why Travel With Morocco Horizon Tours?</h2>
+          <p class="section-subtitle" data-i18n="why_subtitle">
+            We turn your dream trip into a seamlessly planned, unforgettable reality.
+          </p>
+
+          <ul class="why-points-list">
+            <li>
+              <div class="point-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="point-text" data-i18n="why_point1">100% Guaranteed Private & Custom Experiences</div>
+            </li>
+            <li>
+              <div class="point-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="point-text" data-i18n="why_point2">Direct Support for Local Berber Communities & Artisans</div>
+            </li>
+            <li>
+              <div class="point-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="point-text" data-i18n="why_point3">Modern Fleet with Professional Safe Drivers</div>
+            </li>
+            <li>
+              <div class="point-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="point-text" data-i18n="why_point4">Instant WhatsApp Booking Confirmation & Consultation</div>
+            </li>
+          </ul>
+
+          <div class="why-cta-wrapper">
+            <a href="#contact" class="btn btn-primary" data-i18n="nav_contact">Book Now</a>
+            <a href="https://wa.me/212600000000" target="_blank" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section id="reviews" class="section-padding reviews-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-heart"></i> GUEST REVIEWS</span>
+        <h2 class="section-title" data-i18n="reviews_title">What Our Travelers Say</h2>
+        <p class="section-subtitle" data-i18n="reviews_subtitle">
+          Read authentic feedback from guests who experienced Morocco with us.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote" data-i18n="review1_text">
+            "Our 3-day desert excursion to Merzouga was the highlight of our life! Watching the sunrise over the Sahara dunes and sleeping under a million stars in luxury tents was magical."
+          </p>
+          <div class="review-author-info">
+            <div class="author-avatar">SM</div>
+            <div>
+              <h4 class="author-name" data-i18n="review1_author">Sarah & David M.</h4>
+              <span class="author-country" data-i18n="review1_location">United States</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote" data-i18n="review2_text">
+            "The guide in Fes was extraordinarily knowledgeable. Every detail from our arrival in Casablanca to private transport was seamless. Highly recommended!"
+          </p>
+          <div class="review-author-info">
+            <div class="author-avatar">JP</div>
+            <div>
+              <h4 class="author-name" data-i18n="review2_author">Jean-Pierre Laurent</h4>
+              <span class="author-country" data-i18n="review2_location">France</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote" data-i18n="review3_text">
+            "Incredible hospitality! As a solo female traveler, I felt safe, cared for, and treated like family. Chefchaouen and Marrakech were breathtaking."
+          </p>
+          <div class="review-author-info">
+            <div class="author-avatar">ER</div>
+            <div>
+              <h4 class="author-name" data-i18n="review3_author">Elena Rostova</h4>
+              <span class="author-country" data-i18n="review3_location">Germany</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Contact & Booking Form Section -->
+  <section id="contact" class="section-padding contact-section bg-alt">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form Box -->
+        <div class="contact-form-box">
+          <div class="form-header">
+            <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> START YOUR JOURNEY</span>
+            <h2 class="form-title" data-i18n="contact_title">Plan & Book Your Dream Trip</h2>
+            <p class="form-desc" data-i18n="contact_subtitle">
+              Send us an inquiry today! Our travel experts will respond within 2 hours with a personalized itinerary and custom quote.
+            </p>
+          </div>
+
+          <!-- Working Form with Formspree / Email Service Integration & AJAX Handler -->
+          <form id="booking-form" action="https://formspree.io/f/xbjnqkyv" method="POST" class="booking-form">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name"><i class="fa-solid fa-user"></i> <span data-i18n="form_name">Full Name</span> *</label>
+                <input type="text" id="full-name" name="full_name" required placeholder="e.g. John Doe" data-i18n-ph="form_name_ph">
+              </div>
+
+              <div class="form-group">
+                <label for="email-addr"><i class="fa-solid fa-envelope"></i> <span data-i18n="form_email">Email Address</span> *</label>
+                <input type="email" id="email-addr" name="email" required placeholder="john@example.com" data-i18n-ph="form_email_ph">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone-num"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="form_phone">WhatsApp / Phone Number</span> *</label>
+                <input type="tel" id="phone-num" name="phone_whatsapp" required placeholder="+1 (555) 000-0000" data-i18n-ph="form_phone_ph">
+              </div>
+
+              <div class="form-group">
+                <label for="tour-select"><i class="fa-solid fa-compass"></i> <span data-i18n="form_tour">Select Tour / Interest</span> *</label>
+                <select id="tour-select" name="tour_selected" required>
+                  <option value="" data-i18n="form_tour_select">-- Choose a Tour --</option>
+                  <option value="Sahara Golden Dunes Expedition" data-i18n="tour1_title">Sahara Golden Dunes Expedition</option>
+                  <option value="Imperial Cities & Medinas Grand Tour" data-i18n="tour2_title">Imperial Cities & Medinas Grand Tour</option>
+                  <option value="Chefchaouen & North Pearl Discovery" data-i18n="tour3_title">Chefchaouen & North Pearl Discovery</option>
+                  <option value="Atlas Mountains & Berber Village Trek" data-i18n="tour4_title">Atlas Mountains & Berber Village Trek</option>
+                  <option value="Essaouira Coastal Breeze & Souks" data-i18n="tour5_title">Essaouira Coastal Breeze & Souks</option>
+                  <option value="Moroccan Culinary & Artisan Immersion" data-i18n="tour6_title">Moroccan Culinary & Artisan Immersion</option>
+                  <option value="Custom Tailor-Made Trip" data-i18n="form_tour_custom">Custom Tailor-Made Itinerary</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pref-date"><i class="fa-regular fa-calendar-days"></i> <span data-i18n="form_date">Preferred Departure Date</span></label>
+                <input type="date" id="pref-date" name="preferred_date">
+              </div>
+
+              <div class="form-group form-row-inner">
+                <div class="form-subgroup">
+                  <label for="adults-cnt"><i class="fa-solid fa-users"></i> <span data-i18n="form_adults">Adults</span></label>
+                  <input type="number" id="adults-cnt" name="adults_count" min="1" max="50" value="2">
+                </div>
+                <div class="form-subgroup">
+                  <label for="children-cnt"><i class="fa-solid fa-child"></i> <span data-i18n="form_children">Children</span></label>
+                  <input type="number" id="children-cnt" name="children_count" min="0" max="30" value="0">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg"><i class="fa-solid fa-comment-dots"></i> <span data-i18n="form_message">Your Message or Special Requirements</span></label>
+              <textarea id="form-msg" name="message" rows="4" placeholder="Tell us about your interests, accommodation preference, dietary restrictions, or any questions..." data-i18n-ph="form_message_ph"></textarea>
+            </div>
+
+            <button type="submit" id="submit-form-btn" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> <span data-i18n="form_btn_submit">Send Booking Request</span>
+            </button>
+
+            <!-- Form Status Notification Box -->
+            <div id="form-status" class="form-status-msg"></div>
+          </form>
+        </div>
+
+        <!-- Direct Contact Details & Floating Actions -->
+        <div class="contact-info-card">
+          <h3 data-i18n="contact_direct_title">Direct Contact Information</h3>
+          <p>Reach out directly to our concierge team anytime for instant quotes and custom trip planning.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong data-i18n="contact_phone_lbl">Phone / WhatsApp:</strong>
+                <!-- Placeholder phone & whatsapp clearly marked -->
+                <p><a href="https://wa.me/212600000000" target="_blank">+212 600-000000</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong data-i18n="contact_email_lbl">Email Us:</strong>
+                <!-- Placeholder business email clearly marked -->
+                <p><a href="mailto:contact@moroccotours.com">contact@moroccotours.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-i18n="contact_addr_lbl">Headquarters:</strong>
+                <p data-i18n="contact_addr_val">Medina Quarter, Avenue Mohammed V, Marrakech, Morocco</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <strong data-i18n="contact_hours_lbl">Operating Hours:</strong>
+                <p data-i18n="contact_hours_val">Monday - Sunday: 24/7 Concierge Service</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="direct-buttons">
+            <a href="https://wa.me/212600000000?text=Hello!%20I%20would%20like%20to%20inquire%20about%20a%20tour%20in%20Morocco." target="_blank" class="btn btn-whatsapp btn-block">
+              <i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp
+            </a>
+            <a href="mailto:contact@moroccotours.com" class="btn btn-outline btn-block">
+              <i class="fa-solid fa-envelope"></i> Send Direct Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="#home" class="brand-logo footer-logo">
+          <i class="fa-solid fa-compass brand-icon"></i>
+          <div class="brand-text">
+            <span class="brand-name">MOROCCO HORIZON</span>
+            <span class="brand-sub">TOURS & EXPERIENCES</span>
+          </div>
+        </a>
+        <p class="footer-tagline" data-i18n="footer_tagline">
+          Your premier gateway to authentic, luxury, and unforgettable Moroccan travels.
+        </p>
+
+        <!-- Placeholder Social Icons -->
+        <div class="footer-socials">
+          <a href="https://instagram.com/yourhandle" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/yourhandle" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://tripadvisor.com/yourhandle" target="_blank" title="TripAdvisor"><i class="fa-solid fa-plane"></i></a>
+          <a href="https://tiktok.com/@yourhandle" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_quick_links">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#tours" data-i18n="nav_tours">Tour Packages</a></li>
+          <li><a href="#offers" data-i18n="nav_experiences">Experiences</a></li>
+          <li><a href="#stays" data-i18n="nav_stays">Stays & Riads</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Book Now</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_top_tours">Top Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="#tours">Sahara Desert Merzouga</a></li>
+          <li><a href="#tours">Marrakech Souks & Medina</a></li>
+          <li><a href="#tours">Fes Historic Heritage</a></li>
+          <li><a href="#tours">Chefchaouen Blue Pearl</a></li>
+          <li><a href="#tours">Essaouira Atlantic Coast</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4 data-i18n="footer_newsletter_title">Morocco Travel Tips & Offers</h4>
+        <p data-i18n="footer_newsletter_desc">Subscribe to get exclusive itineraries and seasonal discounts.</p>
+        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Morocco Horizon Tours!');">
+          <input type="email" placeholder="Enter your email" required data-i18n-ph="footer_email_ph">
+          <button type="submit" class="btn btn-primary" data-i18n="footer_btn_sub">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; <span id="current-year">2025</span> Morocco Horizon Tours. <span data-i18n="footer_rights">All rights reserved. Designed with ❤️ for Morocco Travel.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Direct Action Buttons (WhatsApp & Quick Contact) -->
+  <div class="floating-actions">
+    <a href="https://wa.me/212600000000?text=Hello!%20I%20would%20like%20to%20inquire%20about%20a%20tour%20in%20Morocco." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="mailto:contact@moroccotours.com" class="float-btn float-email" title="Send Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <button id="scroll-top-btn" class="float-btn float-top" title="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Modal Component 1: Video Player Lightbox -->
+  <div id="video-modal" class="modal-wrapper">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container video-modal-container">
+      <button class="modal-close-btn" id="close-video-modal">&times;</button>
+      <div class="video-responsive-frame">
+        <iframe id="video-iframe" src="" title="Morocco Tourism Experience Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component 2: Gallery Image Lightbox -->
+  <div id="gallery-modal" class="modal-wrapper">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container gallery-modal-container">
+      <button class="modal-close-btn" id="close-gallery-modal">&times;</button>
+      <img id="lightbox-img" src="" alt="Morocco Stay Showcase" class="lightbox-image">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Modal Component 3: Tour Details Quick View -->
+  <div id="tour-modal" class="modal-wrapper">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container tour-modal-container">
+      <button class="modal-close-btn" id="close-tour-modal">&times;</button>
+      <div class="tour-modal-body" id="tour-modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Translations Data JS & Main Script -->
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
